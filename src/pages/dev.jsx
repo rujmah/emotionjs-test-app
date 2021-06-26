@@ -1,59 +1,27 @@
-import { css, jsx } from "@emotion/react";
-import styled from "@emotion/styled";
-import { Box } from "../components/Box";
+import React, { useState } from "react";
 
-const item = css`
-  padding: 0.25rem;
-`;
+import { Box, List, Modal } from "../components";
 
-const ListContainer = styled.div`
-  color: #00c;
-  margin: 0;
+const Dev = ({ list }) => {
+  const [showModal, setShowModal] = useState(false);
 
-  z-index: 1060;
-  width: 100vw;
-  height: 100vh;
-
-  padding: 0.25rem;
-  background-color: wheat;
-  font-family: Arial;
-`;
-
-const ListTitle = styled.h3`
-  font-size: 2rem;
-`;
-
-const Odd = styled.div`
-  ${item};
-  background-color: rgba(135, 135, 13, 0.5);
-`;
-
-const Even = styled.div`
-  ${item};
-  background-color: rgba(135, 133, 222, 0.5);
-`;
-
-const Item = ({ index, children }) => {
-  return index % 2 == 0 ? <Even>{children}</Even> : <Odd>{children}</Odd>;
-};
-
-const List = ({ list }) => {
   return (
-    <ListContainer>
-      <ListTitle>List</ListTitle>
+    <>
+      <h2>Examples</h2>
+      <List list={list} />
+      <Box>Here is a cool box</Box>
 
-      {list.map((item, i) => (
-        <Item key={item.id} index={i}>
-          {item.title}
-        </Item>
-      ))}
-
-      <Box>This is a box</Box>
-    </ListContainer>
+      <div className="modal-demo">
+        <button onClick={() => setShowModal(true)}>Show Modal</button>
+        <Modal show={showModal} closeCallback={() => setShowModal(false)}>
+          This is a basic modal
+        </Modal>
+      </div>
+    </>
   );
 };
 
-export default List;
+export default Dev;
 
 export async function getStaticProps() {
   const list = [

@@ -30,3 +30,9 @@ Components will include:
 - Main component jsx
 - Styles file
 - Stories file
+
+## TODO
+
+- [ ] Add storybook
+- [ ] Make modal more modal-like
+- [ ] Add tests

@@ -1,14 +1,14 @@
-import { ModalStyles } from "./Modal.styles";
+import { ModalContainer } from "./Modal.styles";
 
 const ModalShow = ({ closeCallback, children }) => (
-  <ModalStyles>
+  <ModalContainer>
     <div className="modal-backdrop"></div>
     <div className="modal-dialog">
       <button onClick={closeCallback}>x</button>
       <h2>Show Modal</h2>
       <div className="modal-content">{children}</div>
     </div>
-  </ModalStyles>
+  </ModalContainer>
 );
 
 const Modal = ({ show, closeCallback, children }) => {

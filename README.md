@@ -35,6 +35,6 @@ Colors from [Color Hex](https://www.color-hex.com/color/5d99fd)
 
 ## TODO
 
-- [ ] Add storybook
+- [x] Add storybook
 - [ ] Make modal more modal-like
 - [ ] Add tests

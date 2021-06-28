@@ -1,6 +1,10 @@
 import React from "react";
 import { BoxContainer } from "./Box.styles";
 
-export const Box = ({ children }) => {
-  return <BoxContainer>{children}</BoxContainer>;
+export const Box = ({ bgColor, color, children }) => {
+  return (
+    <BoxContainer style={{ color, backgroundColor: bgColor }}>
+      {children}
+    </BoxContainer>
+  );
 };

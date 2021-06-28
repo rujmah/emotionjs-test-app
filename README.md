@@ -31,6 +31,8 @@ Components will include:
 - Styles file
 - Stories file
 
+Colors from [Color Hex](https://www.color-hex.com/color/5d99fd)
+
 ## TODO
 
 - [ ] Add storybook

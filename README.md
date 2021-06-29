@@ -35,6 +35,8 @@ Colors from [Color Hex](https://www.color-hex.com/color/5d99fd)
 
 ## TODO
 
-- [x] Add storybook
-- [ ] Make modal more modal-like
-- [ ] Add tests
+See the [Project Board](https://github.com/rujmah/emotionjs-test-app/projects/2)
+
+## Resources
+
+- Inspiration from [WFP UI](https://uikit.wfp.org/docs/index.htm) Component Library

@@ -12,6 +12,6 @@ export const ModalContainer = styled.div`
 `;
 
 export const ModalBackdrop = styled.div`
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(131, 73, 73, 0.5);
   z-index: 1040;
 `;

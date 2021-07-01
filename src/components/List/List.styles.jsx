@@ -7,10 +7,6 @@ const item = css`
 export const ListContainer = styled.div`
   color: #00c;
   margin: 0;
-
-  // width: 100vw;
-  // height: 100vh;
-
   padding: 0.25rem;
   background-color: wheat;
   font-family: Arial;
